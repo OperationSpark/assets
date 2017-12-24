@@ -1,0 +1,11 @@
+var head = document.getElementsByTagName('head')[0];
+var axiosScript = document.createElement('script');
+var geoipScript = document.createElement('script');
+geoipScript.type = 'text/javascript';
+geoipScript.src = 'https://rawgit.com/OperationSpark/assets/master/immersionProjectTests/geoip.js';
+axiosScript.type = 'text/javascript';
+axiosScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.js';
+// theScript.onreadystatechange = callback;
+// theScript.onload = callback;
+head.appendChild(axiosScript);
+head.appendChild(geoipScript);
