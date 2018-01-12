@@ -30,10 +30,8 @@ var getJSON = function (url, cb) {
   xhr.send();
 };
 
-getJSON('http://freegeoip.net/json/', (err, geoip) => {
+getJSON('https://freegeoip.net/json/', (err, geoip) => {
   postJSON('https://www.operationspark.org/api/geoips', geoip, (err, res) => {
-    console.error(err);
-    console.log(res);
   });
 });
   
