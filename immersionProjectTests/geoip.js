@@ -30,8 +30,13 @@ var getJSON = function (url, cb) {
   xhr.send();
 };
 
+/* Uncomment when API key obtained and endpoint updated:
+  https://github.com/apilayer/freegeoip
+  https://ipstack.com/faq 
+
 getJSON('https://freegeoip.net/json/', (err, geoip) => {
   postJSON('https://www.operationspark.org/api/geoips', geoip, (err, res) => {
   });
 });
   
+*/
